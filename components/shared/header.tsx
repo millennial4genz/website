@@ -20,11 +20,11 @@ export default function Header() {
             <Link href="/about" className="text-slate-600 hover:text-teal-600 transition-colors">
               About
             </Link>
-            <Link href="/get-involved" className="text-slate-600 hover:text-teal-600 transition-colors">
-              Get Involved
-            </Link>
             <Link href="/areas" className="text-slate-600 hover:text-teal-600 transition-colors">
               Support Areas
+            </Link>
+            <Link href="/get-involved" className="text-slate-600 hover:text-teal-600 transition-colors">
+              Get Involved
             </Link>
             <Link href="/resources" className="text-slate-600 hover:text-teal-600 transition-colors">
               Resources
