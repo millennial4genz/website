@@ -22,22 +22,16 @@ export default function Footer() {
               <Link href="/about/values" className="block text-slate-600 hover:text-teal-600 transition-colors">
                 Values
               </Link>
-              <Link href="/about/faq" className="block text-slate-600 hover:text-teal-600 transition-colors">
-                FAQ
-              </Link>
             </div>
           </div>
           <div>
             <h4 className="font-medium mb-4 text-slate-900">Get Involved</h4>
             <div className="space-y-2 text-sm">
               <Link
-                href="/get-involved/volunteer"
+                href="/get-involved"
                 className="block text-slate-600 hover:text-teal-600 transition-colors"
               >
                 Volunteer
-              </Link>
-              <Link href="/get-involved/partner" className="block text-slate-600 hover:text-teal-600 transition-colors">
-                Partner
               </Link>
               <Link href="/support" className="block text-slate-600 hover:text-teal-600 transition-colors">
                 Support Areas
@@ -47,9 +41,6 @@ export default function Footer() {
           <div>
             <h4 className="font-medium mb-4 text-slate-900">Resources</h4>
             <div className="space-y-2 text-sm">
-              <Link href="/resources/toolkits" className="block text-slate-600 hover:text-teal-600 transition-colors">
-                Toolkits
-              </Link>
               <Link href="/updates" className="block text-slate-600 hover:text-teal-600 transition-colors">
                 Updates
               </Link>
