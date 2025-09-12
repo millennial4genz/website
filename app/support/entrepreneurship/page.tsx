@@ -293,7 +293,7 @@ export default function EntrepreneurshipSupportPage() {
           </blockquote>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
             <Button size="lg" variant="secondary" className="text-lg px-8" asChild>
-              <Link href="/get-involved">
+              <Link href="/volunteer?type=entrepreneurship">
                 Get Involved <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>

@@ -95,47 +95,7 @@ export default function GovernancePage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <Link href="/" className="font-bold text-xl text-slate-900">
-              millennial4genz
-            </Link>
-            <div className="hidden md:flex items-center space-x-8">
-              <Link href="/about" className="text-slate-600 hover:text-teal-600 transition-colors">
-                About
-              </Link>
-              <Link href="/get-involved" className="text-slate-600 hover:text-teal-600 transition-colors">
-                Get Involved
-              </Link>
-              <Link href="/support" className="text-teal-600 font-medium">
-                Support
-              </Link>
-              <Link href="/resources" className="text-slate-600 hover:text-teal-600 transition-colors">
-                Resources
-              </Link>
-              <Link href="/updates" className="text-slate-600 hover:text-teal-600 transition-colors">
-                Updates
-              </Link>
-              <Link href="/transparency" className="text-slate-600 hover:text-teal-600 transition-colors">
-                Transparency
-              </Link>
-              <Link href="/contact" className="text-slate-600 hover:text-teal-600 transition-colors">
-                Contact
-              </Link>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Button variant="outline" size="sm">
-                EN / नेपाली
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      {/* Breadcrumb */}
-      <div className="py-4 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      {/* Breadcrumb */}      <div className="py-4 px-4 sm:px-6 lg:px-8 bg-slate-50">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center space-x-2 text-sm text-slate-600">
             <Link href="/support" className="hover:text-teal-600 transition-colors">
@@ -488,7 +448,7 @@ export default function GovernancePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button size="lg" className="text-lg px-8 bg-teal-600 hover:bg-teal-700" asChild>
-              <Link href="/get-involved">
+              <Link href="/volunteer?type=governance">
                 Get Involved <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
@@ -498,83 +458,6 @@ export default function GovernancePage() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-slate-100 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="font-bold mb-4 text-slate-900">#millennial4genz</h3>
-              <p className="text-sm text-slate-600">Centering Gen Z leadership for a new Nepal.</p>
-            </div>
-            <div>
-              <h4 className="font-medium mb-4 text-slate-900">Movement</h4>
-              <div className="space-y-2 text-sm">
-                <Link href="/about" className="block text-slate-600 hover:text-teal-600 transition-colors">
-                  About
-                </Link>
-                <Link href="/about/principles" className="block text-slate-600 hover:text-teal-600 transition-colors">
-                  Principles
-                </Link>
-                <Link href="/about/values" className="block text-slate-600 hover:text-teal-600 transition-colors">
-                  Values
-                </Link>
-                <Link href="/about/faq" className="block text-slate-600 hover:text-teal-600 transition-colors">
-                  FAQ
-                </Link>
-              </div>
-            </div>
-            <div>
-              <h4 className="font-medium mb-4 text-slate-900">Get Involved</h4>
-              <div className="space-y-2 text-sm">
-                <Link
-                  href="/get-involved/volunteer"
-                  className="block text-slate-600 hover:text-teal-600 transition-colors"
-                >
-                  Volunteer
-                </Link>
-                <Link
-                  href="/get-involved/partner"
-                  className="block text-slate-600 hover:text-teal-600 transition-colors"
-                >
-                  Partner
-                </Link>
-                <Link href="/support" className="block text-slate-600 hover:text-teal-600 transition-colors">
-                  Support Areas
-                </Link>
-              </div>
-            </div>
-            <div>
-              <h4 className="font-medium mb-4 text-slate-900">Resources</h4>
-              <div className="space-y-2 text-sm">
-                <Link href="/resources/toolkits" className="block text-slate-600 hover:text-teal-600 transition-colors">
-                  Toolkits
-                </Link>
-                <Link href="/transparency" className="block text-slate-600 hover:text-teal-600 transition-colors">
-                  Transparency
-                </Link>
-                <Link href="/safety" className="block text-slate-600 hover:text-teal-600 transition-colors">
-                  Safety
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="border-t border-slate-200 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-600">
-            <p>&copy; 2024 millennial4genz. Open source movement.</p>
-            <div className="flex gap-4 mt-4 md:mt-0">
-              <Link href="/privacy" className="hover:text-teal-600 transition-colors">
-                Privacy
-              </Link>
-              <Link href="/accessibility" className="hover:text-teal-600 transition-colors">
-                Accessibility
-              </Link>
-              <Button variant="ghost" size="sm">
-                EN / नेपाली
-              </Button>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }

@@ -225,9 +225,6 @@ export default function ValuesPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-teal-600 hover:bg-teal-700">
-              Commit to Our Values
-            </Button>
             <Button variant="outline" size="lg" asChild>
               <Link href="/about/principles">See Our Principles</Link>
             </Button>

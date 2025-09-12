@@ -107,7 +107,7 @@ export default function GetInvolvedPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-12 h-64 bg-gradient-to-r from-teal-100 to-blue-100 rounded-lg flex items-center justify-center">
             <div className="text-center text-slate-500">
@@ -123,13 +123,10 @@ export default function GetInvolvedPage() {
             resources, and solidarity while keeping youth in the driver's seat. Here are the many ways you can
             contribute.
           </p>
-          <Button size="lg" className="text-lg px-8 bg-teal-600 hover:bg-teal-700">
-            Start Volunteering <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="space-y-20">
             {engagementSections.map((section, index) => {
@@ -193,7 +190,7 @@ export default function GetInvolvedPage() {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-teal-500 to-blue-600">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-teal-500 to-blue-600">
         <div className="max-w-4xl mx-auto text-center">
           <blockquote className="text-2xl md:text-3xl font-semibold text-white text-balance mb-6">
             "This is Gen Z's movement. Our role is not to lead, but to build the scaffolding so they can."
@@ -205,7 +202,7 @@ export default function GetInvolvedPage() {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6 text-slate-900">
             Ready to get involved? Choose a role and take the first step today.

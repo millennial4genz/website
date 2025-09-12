@@ -258,11 +258,8 @@ export default function PrinciplesPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-teal-600 hover:bg-teal-700">
-              Commit to Principles
-            </Button>
             <Button variant="outline" size="lg" asChild>
-              <Link href="/about">Return to About</Link>
+              <Link href="/about/values">See Our Values</Link>
             </Button>
           </div>
 

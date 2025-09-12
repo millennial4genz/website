@@ -33,7 +33,7 @@ export default function SupportOverviewPage() {
       icon: Users,
       description:
         "Many Gen Z groups are decentralized by design. Millennials can strengthen them with project management, documentation, and fundraising skills. We can set up digital tools, manage logistics, and ensure processes run smoothly — while youth leaders remain in charge of direction and strategy.",
-      link: "/support/organization",
+      link: "/support/organization-movement",
     },
     {
       id: "inclusivity",
@@ -41,7 +41,7 @@ export default function SupportOverviewPage() {
       icon: Heart,
       description:
         "Nepal's history is scarred by exclusion. Millennials can help Gen Z ensure marginalized voices — women, Dalits, Madhesis, Janajatis, LGBTQ+, and disabled communities — are included from the start. This means building accessible spaces, translating content into multiple languages, and amplifying diverse youth perspectives.",
-      link: "/support/inclusivity",
+      link: "/support/social-change",
     },
     {
       id: "rights",
@@ -49,7 +49,7 @@ export default function SupportOverviewPage() {
       icon: Shield,
       description:
         "Protecting fundamental freedoms is crucial. Millennials can provide legal defense networks, document abuses, and use their international connections to raise alarms globally. We safeguard Gen Z's right to protest, speak, and organize — defending them against state or elite repression.",
-      link: "/support/rights",
+      link: "/support/rights-freedom",
     },
     {
       id: "humanities",
@@ -65,7 +65,7 @@ export default function SupportOverviewPage() {
       icon: Home,
       description:
         "Revolutions succeed when they reach villages, towns, and neighborhoods. Millennials can help by setting up community kitchens, safe shelters, and volunteer networks. We can bridge urban protests with rural struggles, and provide mediation when tensions rise.",
-      link: "/support/community",
+      link: "/support/community-development",
     },
     {
       id: "finance",
@@ -73,7 +73,7 @@ export default function SupportOverviewPage() {
       icon: DollarSign,
       description:
         "Funding youth-led movements requires trust. Millennials can build transparent donation systems, maintain open ledgers, and teach cooperative or community-based financial models. Our role is to protect youth-led funds from corruption — not control them.",
-      link: "/support/finance",
+      link: "/support/finance-economy",
     },
     {
       id: "technology",
@@ -81,7 +81,7 @@ export default function SupportOverviewPage() {
       icon: Laptop,
       description:
         "Gen Z is digitally native, but secure organizing requires more. Millennials can provide tools for encrypted communication, data protection, and civic-tech solutions like voting platforms or dashboards. We ensure tech empowers youth leadership, not surveillance or exploitation.",
-      link: "/support/technology",
+      link: "/support/technology-innovation",
     },
     {
       id: "health",
@@ -97,7 +97,7 @@ export default function SupportOverviewPage() {
       icon: Globe,
       description:
         "Global recognition helps protect youth leaders. Millennials can use their professional networks to connect Gen Z with INGOs, the UN, or diaspora groups. But we must act as facilitators only — ensuring Gen Z voices speak directly in global forums.",
-      link: "/support/international",
+      link: "/support/diplomatic-support",
     },
     {
       id: "entrepreneurship",
@@ -112,7 +112,7 @@ export default function SupportOverviewPage() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           {/* Space for hero background image */}
           <div className="mb-12 h-64 bg-gradient-to-r from-teal-100 to-blue-100 rounded-lg flex items-center justify-center">
@@ -129,14 +129,11 @@ export default function SupportOverviewPage() {
             Millennials bring experience, networks, and skills — but our role is support, not leadership. These 11 areas
             show how we can help Gen Z build a just, inclusive, and transparent Nepal without taking power away.
           </p>
-          <Button size="lg" className="text-lg px-8 bg-teal-600 hover:bg-teal-700">
-            Explore All Areas <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
         </div>
       </section>
 
       {/* Support Areas Grid */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {supportAreas.map((area) => {
@@ -176,7 +173,7 @@ export default function SupportOverviewPage() {
       </section>
 
       {/* Highlight Quote */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-teal-500 to-blue-600">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-teal-500 to-blue-600">
         <div className="max-w-4xl mx-auto text-center">
           <blockquote className="text-2xl md:text-3xl font-semibold text-white text-balance mb-6">
             "Millennials are the scaffolding. Gen Z is the structure. Our job is to support — not overshadow."
@@ -196,7 +193,7 @@ export default function SupportOverviewPage() {
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button size="lg" className="text-lg px-8 bg-teal-600 hover:bg-teal-700" asChild>
-              <Link href="/get-involved">
+              <Link href="/volunteer">
                 Volunteer <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
