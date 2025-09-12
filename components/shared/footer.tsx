@@ -33,7 +33,7 @@ export default function Footer() {
               >
                 Volunteer
               </Link>
-              <Link href="/support" className="block text-slate-600 hover:text-teal-600 transition-colors">
+              <Link href="/areas" className="block text-slate-600 hover:text-teal-600 transition-colors">
                 Support Areas
               </Link>
             </div>

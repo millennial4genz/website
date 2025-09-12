@@ -230,150 +230,292 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <Badge className="bg-indigo-100 text-indigo-700 border-indigo-200 mb-4">
               <Users className="w-4 h-4 mr-2" />
-              Join the Movement
+              Areas to Support
             </Badge>
             <h2 className="text-4xl font-bold text-slate-900 mb-4">How Can You Help?</h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Choose your area of expertise and support Gen Z leadership in Nepal.
+              Choose your area of expertise and support Gen Z leadership in building a sustainable, inclusive, and tech-driven future.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white/80 backdrop-blur-sm">
+            <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white/80 backdrop-blur-sm group">
               <CardHeader>
-                <Badge variant="secondary" className="w-fit bg-blue-100 text-blue-700">
-                  Governance
-                </Badge>
-                <CardTitle className="text-xl">Policy & Process</CardTitle>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-10 h-10 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center">
+                    <Shield className="h-5 w-5" />
+                  </div>
+                  <Badge variant="secondary" className="w-fit bg-blue-100 text-blue-700">
+                    Governance
+                  </Badge>
+                </div>
+                <CardTitle className="text-xl">Leadership & Policy-Making</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  Transparent, inclusive governance that reflects diversity and protects rights and freedoms for all.
+                </p>
                 <div className="space-y-2 text-sm text-slate-600">
-                  <p>• Policy drafting clinics</p>
-                  <p>• Meeting minute takers</p>
-                  <p>• Process designers for assemblies</p>
-                  <p>• Election observation prep</p>
+                  <p>• Inclusive leadership structures</p>
+                  <p>• Transparent management systems</p>
+                  <p>• Human rights policy advocacy</p>
                 </div>
-                <Button
-                  className="w-full mt-4 bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600"
-                  asChild
-                >
-                  <Link href="/volunteer?type=governance">Volunteer for Governance</Link>
-                </Button>
+                <div className="pt-2 space-y-2">
+                  <Button
+                    className="w-full bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600"
+                    asChild
+                  >
+                    <Link href="/areas/governance">Learn More</Link>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    className="w-full border-blue-200 text-blue-700 hover:bg-blue-50"
+                    asChild
+                  >
+                    <Link href="/volunteer?type=governance">Volunteer</Link>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white/80 backdrop-blur-sm">
+            <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white/80 backdrop-blur-sm group">
               <CardHeader>
-                <Badge variant="secondary" className="w-fit bg-indigo-100 text-indigo-700">
-                  Technology
-                </Badge>
-                <CardTitle className="text-xl">Digital Infrastructure</CardTitle>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-10 h-10 rounded-lg bg-orange-100 text-orange-700 flex items-center justify-center">
+                    <Sparkles className="h-5 w-5" />
+                  </div>
+                  <Badge variant="secondary" className="w-fit bg-orange-100 text-orange-700">
+                    Innovation
+                  </Badge>
+                </div>
+                <CardTitle className="text-xl">Innovation & Entrepreneurship</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  Building thriving ecosystems that foster creativity, new ideas, and equitable access to resources.
+                </p>
                 <div className="space-y-2 text-sm text-slate-600">
-                  <p>• Secure comms setup</p>
-                  <p>• SMS info lines</p>
-                  <p>• Open data portals</p>
-                  <p>• Website & form builds</p>
+                  <p>• Youth innovation platforms</p>
+                  <p>• Equitable funding access</p>
+                  <p>• Social impact investments</p>
                 </div>
-                <Button
-                  className="w-full mt-4 bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600"
-                  asChild
-                >
-                  <Link href="/volunteer?type=technology">Volunteer for Tech</Link>
-                </Button>
+                <div className="pt-2 space-y-2">
+                  <Button
+                    className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600"
+                    asChild
+                  >
+                    <Link href="/areas/innovation-entrepreneurship">Learn More</Link>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    className="w-full border-orange-200 text-orange-700 hover:bg-orange-50"
+                    asChild
+                  >
+                    <Link href="/volunteer?type=innovation-entrepreneurship">Volunteer</Link>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white/80 backdrop-blur-sm">
+            <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white/80 backdrop-blur-sm group">
               <CardHeader>
-                <Badge variant="secondary" className="w-fit bg-emerald-100 text-emerald-700">
-                  Health
-                </Badge>
-                <CardTitle className="text-xl">Wellness & Safety</CardTitle>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-10 h-10 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center">
+                    <Eye className="h-5 w-5" />
+                  </div>
+                  <Badge variant="secondary" className="w-fit bg-indigo-100 text-indigo-700">
+                    Technology
+                  </Badge>
+                </div>
+                <CardTitle className="text-xl">Frontier Technology</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  Using blockchain, AI, and digital tools to drive transparency, efficiency, and equal access.
+                </p>
                 <div className="space-y-2 text-sm text-slate-600">
-                  <p>• First-aid teams</p>
-                  <p>• Verified clinic referrals</p>
-                  <p>• Mental-health peer support</p>
-                  <p>• Trauma-informed training</p>
+                  <p>• Blockchain transparency systems</p>
+                  <p>• AI-powered efficiency tools</p>
+                  <p>• Digital-first accessibility</p>
                 </div>
-                <Button
-                  className="w-full mt-4 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600"
-                  asChild
-                >
-                  <Link href="/volunteer?type=health">Volunteer for Health</Link>
-                </Button>
+                <div className="pt-2 space-y-2">
+                  <Button
+                    className="w-full bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600"
+                    asChild
+                  >
+                    <Link href="/areas/technology">Learn More</Link>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    className="w-full border-indigo-200 text-indigo-700 hover:bg-indigo-50"
+                    asChild
+                  >
+                    <Link href="/volunteer?type=technology">Volunteer</Link>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white/80 backdrop-blur-sm">
+            <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white/80 backdrop-blur-sm group">
               <CardHeader>
-                <Badge variant="secondary" className="w-fit bg-yellow-100 text-yellow-700">
-                  Finance
-                </Badge>
-                <CardTitle className="text-xl">Financial Transparency</CardTitle>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-10 h-10 rounded-lg bg-yellow-100 text-yellow-700 flex items-center justify-center">
+                    <Target className="h-5 w-5" />
+                  </div>
+                  <Badge variant="secondary" className="w-fit bg-yellow-100 text-yellow-700">
+                    Finance
+                  </Badge>
+                </div>
+                <CardTitle className="text-xl">Finance & Investment</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  Fair, transparent financial systems ensuring inclusive wealth distribution and accessible capital.
+                </p>
                 <div className="space-y-2 text-sm text-slate-600">
-                  <p>• Donation rails</p>
-                  <p>• Open ledger & expense review</p>
-                  <p>• Procurement guidelines</p>
-                  <p>• Co-op models</p>
+                  <p>• Transparent investment platforms</p>
+                  <p>• DeFi and digital currencies</p>
+                  <p>• Streamlined FDI processes</p>
                 </div>
-                <Button
-                  className="w-full mt-4 bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600"
-                  asChild
-                >
-                  <Link href="/volunteer?type=finance">Volunteer for Finance</Link>
-                </Button>
+                <div className="pt-2 space-y-2">
+                  <Button
+                    className="w-full bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600"
+                    asChild
+                  >
+                    <Link href="/areas/finance-investment">Learn More</Link>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    className="w-full border-yellow-200 text-yellow-700 hover:bg-yellow-50"
+                    asChild
+                  >
+                    <Link href="/volunteer?type=finance-investment">Volunteer</Link>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white/80 backdrop-blur-sm">
+            <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white/80 backdrop-blur-sm group">
               <CardHeader>
-                <Badge variant="secondary" className="w-fit bg-purple-100 text-purple-700">
-                  Arts & Culture
-                </Badge>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center">
+                    <Heart className="h-5 w-5" />
+                  </div>
+                  <Badge variant="secondary" className="w-fit bg-emerald-100 text-emerald-700">
+                    Health
+                  </Badge>
+                </div>
+                <CardTitle className="text-xl">Health & Well-being</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  Comprehensive care ensuring accessible healthcare, mental health support, and preventive education.
+                </p>
+                <div className="space-y-2 text-sm text-slate-600">
+                  <p>• Accessible healthcare systems</p>
+                  <p>• Mental health prioritization</p>
+                  <p>• Preventive care & education</p>
+                </div>
+                <div className="pt-2 space-y-2">
+                  <Button
+                    className="w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600"
+                    asChild
+                  >
+                    <Link href="/areas/health">Learn More</Link>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    className="w-full border-emerald-200 text-emerald-700 hover:bg-emerald-50"
+                    asChild
+                  >
+                    <Link href="/volunteer?type=health">Volunteer</Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white/80 backdrop-blur-sm group">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-10 h-10 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center">
+                    <Megaphone className="h-5 w-5" />
+                  </div>
+                  <Badge variant="secondary" className="w-fit bg-purple-100 text-purple-700">
+                    Arts & Culture
+                  </Badge>
+                </div>
                 <CardTitle className="text-xl">Creative Expression</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  Harnessing creativity for social change while preserving heritage and embracing modern expressions.
+                </p>
                 <div className="space-y-2 text-sm text-slate-600">
-                  <p>• Translation (EN/नेपाली)</p>
-                  <p>• Oral histories</p>
-                  <p>• Murals, music, theater</p>
-                  <p>• Media literacy workshops</p>
+                  <p>• Cultural preservation & promotion</p>
+                  <p>• Youth creative empowerment</p>
+                  <p>• Global platforms for local culture</p>
                 </div>
-                <Button
-                  className="w-full mt-4 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
-                  asChild
-                >
-                  <Link href="/volunteer?type=humanities">Volunteer for Arts</Link>
-                </Button>
+                <div className="pt-2 space-y-2">
+                  <Button
+                    className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
+                    asChild
+                  >
+                    <Link href="/areas/arts-culture">Learn More</Link>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    className="w-full border-purple-200 text-purple-700 hover:bg-purple-50"
+                    asChild
+                  >
+                    <Link href="/volunteer?type=arts-culture">Volunteer</Link>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
+          </div>
 
-            <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white/80 backdrop-blur-sm">
-              <CardHeader>
-                <Badge variant="secondary" className="w-fit bg-green-100 text-green-700">
-                  Community
-                </Badge>
-                <CardTitle className="text-xl">Social Support</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div className="space-y-2 text-sm text-slate-600">
-                  <p>• Kitchens/shelters</p>
-                  <p>• Logistics</p>
-                  <p>• Conflict mediation</p>
-                  <p>• Rural outreach linking</p>
+          {/* Environmental Sustainability - Highlighted */}
+          <div className="mt-12">
+            <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-gradient-to-r from-green-50 to-emerald-50 group">
+              <CardContent className="p-8">
+                <div className="flex flex-col md:flex-row items-center gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 rounded-xl bg-green-100 text-green-700 flex items-center justify-center">
+                      <Target className="h-8 w-8" />
+                    </div>
+                  </div>
+                  <div className="flex-1 text-center md:text-left">
+                    <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
+                      <Badge className="bg-green-100 text-green-700 border-green-200">
+                        Environmental Sustainability
+                      </Badge>
+                      <Badge variant="outline" className="border-green-300 text-green-700">
+                        Urgent Priority
+                      </Badge>
+                    </div>
+                    <h3 className="text-2xl font-bold text-slate-900 mb-2">Climate Justice & Green Innovation</h3>
+                    <p className="text-slate-600 leading-relaxed mb-4">
+                      Climate change is one of the most urgent crises of our time. Gen Z must lead environmental sustainability efforts, ensuring future generations inherit a livable planet through innovative solutions and climate justice.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+                      <Button
+                        className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700"
+                        asChild
+                      >
+                        <Link href="/areas/environment">
+                          Explore Climate Action <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
+                      </Button>
+                      <Button
+                        variant="outline"
+                        className="border-green-200 text-green-700 hover:bg-green-50"
+                        asChild
+                      >
+                        <Link href="/volunteer?type=environment">Join Climate Movement</Link>
+                      </Button>
+                    </div>
+                  </div>
                 </div>
-                <Button
-                  className="w-full mt-4 bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600"
-                  asChild
-                >
-                  <Link href="/volunteer?type=community">Volunteer for Community</Link>
-                </Button>
               </CardContent>
             </Card>
           </div>
@@ -499,7 +641,7 @@ export default function HomePage() {
             <Button
               variant="outline"
               size="lg"
-              className="border-white/30 text-violet-600 hover:bg-white/10 bg-transparent"
+              className="border-white/30 text-white hover:bg-white/10 bg-transparent"
               asChild
             >
               <Link href="/about">Learn More</Link>

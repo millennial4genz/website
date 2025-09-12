@@ -89,7 +89,7 @@ export default function GetInvolvedPage() {
         "Support digital rights: teach secure communications, encryption, and online safety.",
       ],
       cta: "Join Legal & Rights Support",
-      link: "/support/rights-freedom",
+      link: "/areas",
     },
     {
       icon: Heart,
@@ -101,7 +101,7 @@ export default function GetInvolvedPage() {
         "Support conflict mediation and community resilience building.",
       ],
       cta: "Volunteer Locally",
-      link: "/support/community",
+      link: "/areas",
     },
   ]
 

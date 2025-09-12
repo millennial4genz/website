@@ -23,8 +23,8 @@ export default function Header() {
             <Link href="/get-involved" className="text-slate-600 hover:text-teal-600 transition-colors">
               Get Involved
             </Link>
-            <Link href="/support" className="text-slate-600 hover:text-teal-600 transition-colors">
-              Support
+            <Link href="/areas" className="text-slate-600 hover:text-teal-600 transition-colors">
+              Support Areas
             </Link>
             <Link href="/resources" className="text-slate-600 hover:text-teal-600 transition-colors">
               Resources
@@ -64,11 +64,11 @@ export default function Header() {
                 Get Involved
               </Link>
               <Link
-                href="/support"
+                href="/areas"
                 className="text-slate-600 hover:text-teal-600 transition-colors px-2 py-1"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Support
+                Support Areas
               </Link>
               <Link
                 href="/resources"

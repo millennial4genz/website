@@ -123,7 +123,7 @@ export default function VolunteerPage() {
 
             <div className="space-y-3">
               <Button asChild className="w-full">
-                <Link href="/support">
+                <Link href="/areas">
                   Explore Support Areas <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
