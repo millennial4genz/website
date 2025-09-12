@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Users, Shield, Eye, Heart, Megaphone, Sparkles, Target } from "lucide-react"
 import Link from "next/link"
 import type { Metadata } from "next"
+import { HeroImage } from "@/components/hero-image"
 
 export const metadata: Metadata = {
   title: "Youth-Led Movement for Democratic Change in Nepal",
@@ -94,11 +95,7 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section className="relative py-24 px-4 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-white/95 via-indigo-50/90 to-violet-100/95"></div>
-          <div className="absolute top-0 left-0 w-72 h-72 bg-gradient-to-br from-violet-400/20 to-indigo-400/20 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-br from-indigo-400/20 to-purple-400/20 rounded-full blur-3xl transform translate-x-1/2 translate-y-1/2"></div>
-        </div>
+        <HeroImage />
 
         <div className="max-w-7xl mx-auto text-center relative z-10">
           <h1 className="text-6xl md:text-7xl font-bold mb-6 text-balance">
