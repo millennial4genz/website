@@ -27,7 +27,7 @@ export default function GetInvolvedPage() {
         "Arts & Humanities: Document stories, translate materials, and support Gen Z creatives in spreading their vision.",
       ],
       cta: "Sign Up to Volunteer",
-      link: "/form/volunteer",
+      link: "/volunteer?type=other",
     },
     {
       icon: MessageCircle,
@@ -39,7 +39,7 @@ export default function GetInvolvedPage() {
         "Participate in citizen feedback loops (surveys, SMS polls, online forums).",
       ],
       cta: "See Upcoming Assemblies",
-      link: "/updates/events",
+      link: "/updates",
     },
     {
       icon: DollarSign,
@@ -51,7 +51,7 @@ export default function GetInvolvedPage() {
         "Professional Services: Legal aid, design support, translation, or mentoring when requested.",
       ],
       cta: "Donate or Offer Resources",
-      link: "/support/finance",
+      link: "/volunteer?type=finance",
       note: "Every rupee and resource is openly tracked on our Transparency page.",
     },
     {
@@ -64,7 +64,7 @@ export default function GetInvolvedPage() {
         "Design inclusive events with ramps, sign language interpreters, and online access.",
       ],
       cta: "Join Inclusivity Efforts",
-      link: "/support/inclusivity",
+      link: "/volunteer?type=social-change",
     },
     {
       icon: Megaphone,
@@ -77,7 +77,7 @@ export default function GetInvolvedPage() {
         "Connect Gen Z to international allies, but let youth speak for themselves.",
       ],
       cta: "Get Media Kit",
-      link: "/resources/media",
+      link: "/resources",
     },
     {
       icon: Shield,
@@ -89,7 +89,7 @@ export default function GetInvolvedPage() {
         "Support digital rights: teach secure communications, encryption, and online safety.",
       ],
       cta: "Join Legal & Rights Support",
-      link: "/support/rights",
+      link: "/support/rights-freedom",
     },
     {
       icon: Heart,
@@ -209,12 +209,9 @@ export default function GetInvolvedPage() {
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button size="lg" className="text-lg px-8 bg-teal-600 hover:bg-teal-700" asChild>
-              <Link href="/form/volunteer">
+              <Link href="/volunteer?type=other">
                 Volunteer <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
-            </Button>
-            <Button variant="outline" size="lg" asChild>
-              <Link href="/support/finance">Donate</Link>
             </Button>
             <Button variant="outline" size="lg" asChild>
               <Link href="/about/principles">Learn More</Link>
