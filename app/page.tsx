@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ArrowRight, Users, Shield, Eye, Heart, Megaphone, Sparkles, Target, Zap } from "lucide-react"
+import { ArrowRight, Users, Shield, Eye, Heart, Megaphone, Sparkles, Target } from "lucide-react"
 import Link from "next/link"
 import type { Metadata } from "next"
 
@@ -77,10 +77,17 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
       {/* Announcement Bar */}
-      <div className="bg-gradient-to-r from-violet-600 to-indigo-600 text-white py-3 px-4 text-center text-sm font-medium">
+      <div
+        className="bg-gradient-to-r from-violet-600 to-indigo-600 py-3 px-4 text-center text-sm font-medium"
+        style={{ color: "white" }}
+      >
         <Sparkles className="inline w-4 h-4 mr-2" />
-        Be the part of the solution •{" "}
-        <Link href="/volunteer" className="underline font-semibold hover:text-violet-200 transition-colors">
+        <span style={{ color: "white" }}>Be the part of the solution • </span>
+        <Link
+          href="/volunteer"
+          className="underline font-semibold hover:text-violet-200 transition-colors"
+          style={{ color: "white" }}
+        >
           Join Now →
         </Link>
       </div>
@@ -94,8 +101,6 @@ export default function HomePage() {
         </div>
 
         <div className="max-w-7xl mx-auto text-center relative z-10">
-          
-          
           <h1 className="text-6xl md:text-7xl font-bold mb-6 text-balance">
             <span className="bg-gradient-to-r from-slate-900 via-violet-900 to-indigo-900 bg-clip-text text-transparent">
               Youth Lead.
@@ -105,23 +110,28 @@ export default function HomePage() {
               We Support.
             </span>
           </h1>
-          
+
           <div className="text-xl text-slate-700 mb-10 space-y-3 leading-relaxed max-w-4xl mx-auto">
             <p className="font-medium">
-              A Nepal movement centering <span className="text-violet-600 font-semibold">Gen Z leadership</span>—backed by intergenerational support in governance, innovation, and entrepreneurship.
+              A Nepal movement centering <span className="text-violet-600 font-semibold">Gen Z leadership</span>—backed
+              by intergenerational support in governance, innovation, and entrepreneurship.
             </p>
             <p className="text-slate-600">
               Millennials provide the scaffolding: skills, safety, transparency—without taking the mic.
             </p>
           </div>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="text-lg px-8 bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all" asChild>
+            <Button
+              size="lg"
+              className="text-lg px-8 bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all"
+              asChild
+            >
               <Link href="/volunteer">
                 Get Involved <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button variant="outline" size="lg" className="border-slate-300 hover:bg-slate-50" asChild>
+            <Button variant="outline" size="lg" className="border-slate-300 hover:bg-slate-50 bg-transparent" asChild>
               <Link href="/about/principles">Read Principles</Link>
             </Button>
           </div>
@@ -141,7 +151,7 @@ export default function HomePage() {
               Our movement is built on transparent principles that ensure youth leadership remains at the center.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-gradient-to-br from-white to-violet-50/50">
               <CardHeader>
@@ -154,7 +164,7 @@ export default function HomePage() {
                 <p className="text-slate-600">Decisions, spokespeople, and the narrative belong to Gen Z.</p>
               </CardContent>
             </Card>
-            
+
             <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-gradient-to-br from-white to-indigo-50/50">
               <CardHeader>
                 <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-lg flex items-center justify-center mb-4">
@@ -166,7 +176,7 @@ export default function HomePage() {
                 <p className="text-slate-600">We advise on request, we don't override.</p>
               </CardContent>
             </Card>
-            
+
             <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-gradient-to-br from-white to-purple-50/50">
               <CardHeader>
                 <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mb-4">
@@ -178,7 +188,7 @@ export default function HomePage() {
                 <p className="text-slate-600">Gender, caste, region, ability—no one left out.</p>
               </CardContent>
             </Card>
-            
+
             <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-gradient-to-br from-white to-emerald-50/50">
               <CardHeader>
                 <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-lg flex items-center justify-center mb-4">
@@ -190,7 +200,7 @@ export default function HomePage() {
                 <p className="text-slate-600">Open budgets, open minutes, open data.</p>
               </CardContent>
             </Card>
-            
+
             <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-gradient-to-br from-white to-orange-50/50">
               <CardHeader>
                 <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center mb-4">
@@ -203,9 +213,9 @@ export default function HomePage() {
               </CardContent>
             </Card>
           </div>
-          
+
           <div className="text-center mt-12">
-            <Button variant="outline" asChild className="border-violet-200 hover:bg-violet-50">
+            <Button variant="outline" asChild className="border-violet-200 hover:bg-violet-50 bg-transparent">
               <Link href="/about/principles">
                 See full principles <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
@@ -227,7 +237,7 @@ export default function HomePage() {
               Choose your area of expertise and support Gen Z leadership in Nepal.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white/80 backdrop-blur-sm">
               <CardHeader>
@@ -243,10 +253,11 @@ export default function HomePage() {
                   <p>• Process designers for assemblies</p>
                   <p>• Election observation prep</p>
                 </div>
-                <Button className="w-full mt-4 bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600" asChild>
-                  <Link href="/volunteer?type=governance">
-                    Volunteer for Governance
-                  </Link>
+                <Button
+                  className="w-full mt-4 bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600"
+                  asChild
+                >
+                  <Link href="/volunteer?type=governance">Volunteer for Governance</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -265,10 +276,11 @@ export default function HomePage() {
                   <p>• Open data portals</p>
                   <p>• Website & form builds</p>
                 </div>
-                <Button className="w-full mt-4 bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600" asChild>
-                  <Link href="/volunteer?type=technology">
-                    Volunteer for Tech
-                  </Link>
+                <Button
+                  className="w-full mt-4 bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600"
+                  asChild
+                >
+                  <Link href="/volunteer?type=technology">Volunteer for Tech</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -287,10 +299,11 @@ export default function HomePage() {
                   <p>• Mental-health peer support</p>
                   <p>• Trauma-informed training</p>
                 </div>
-                <Button className="w-full mt-4 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600" asChild>
-                  <Link href="/volunteer?type=health">
-                    Volunteer for Health
-                  </Link>
+                <Button
+                  className="w-full mt-4 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600"
+                  asChild
+                >
+                  <Link href="/volunteer?type=health">Volunteer for Health</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -309,10 +322,11 @@ export default function HomePage() {
                   <p>• Procurement guidelines</p>
                   <p>• Co-op models</p>
                 </div>
-                <Button className="w-full mt-4 bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600" asChild>
-                  <Link href="/volunteer?type=finance">
-                    Volunteer for Finance
-                  </Link>
+                <Button
+                  className="w-full mt-4 bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600"
+                  asChild
+                >
+                  <Link href="/volunteer?type=finance">Volunteer for Finance</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -331,10 +345,11 @@ export default function HomePage() {
                   <p>• Murals, music, theater</p>
                   <p>• Media literacy workshops</p>
                 </div>
-                <Button className="w-full mt-4 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600" asChild>
-                  <Link href="/volunteer?type=humanities">
-                    Volunteer for Arts
-                  </Link>
+                <Button
+                  className="w-full mt-4 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
+                  asChild
+                >
+                  <Link href="/volunteer?type=humanities">Volunteer for Arts</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -353,10 +368,11 @@ export default function HomePage() {
                   <p>• Conflict mediation</p>
                   <p>• Rural outreach linking</p>
                 </div>
-                <Button className="w-full mt-4 bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600" asChild>
-                  <Link href="/volunteer?type=community">
-                    Volunteer for Community
-                  </Link>
+                <Button
+                  className="w-full mt-4 bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600"
+                  asChild
+                >
+                  <Link href="/volunteer?type=community">Volunteer for Community</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -462,7 +478,6 @@ export default function HomePage() {
         </div>
       </section>
 
-
       {/* Call to Action */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-violet-600 via-indigo-600 to-purple-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
@@ -470,11 +485,10 @@ export default function HomePage() {
             <Sparkles className="w-4 h-4 mr-2" />
             Ready to Make Change?
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            The Time is Now
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">The Time is Now</h2>
           <p className="text-xl mb-8 opacity-90 leading-relaxed">
-            Nepal's youth deserve leadership roles in their own future. Join millennials who believe in amplifying, not replacing, the next generation's voice.
+            Nepal's youth deserve leadership roles in their own future. Join millennials who believe in amplifying, not
+            replacing, the next generation's voice.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-violet-600 hover:bg-gray-50 shadow-lg" asChild>
@@ -482,7 +496,12 @@ export default function HomePage() {
                 Start Contributing <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button variant="outline" size="lg" className="border-white/30 text-violet-600 hover:bg-white/10" asChild>
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-white/30 text-violet-600 hover:bg-white/10 bg-transparent"
+              asChild
+            >
               <Link href="/about">Learn More</Link>
             </Button>
           </div>
